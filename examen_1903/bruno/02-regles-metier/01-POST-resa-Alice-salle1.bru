@@ -1,0 +1,24 @@
+meta {
+  name: 01 - POST Resa Alice salle 1 -> CONFIRMED + salle indisponible
+  type: http
+  seq: 1
+}
+post {
+  url: {{reservation_url}}/reservations
+  body: json
+}
+headers {
+  Content-Type: application/json
+}
+body:json {
+  {
+    "roomId": 1,
+    "memberId": 1,
+    "startDateTime": "2026-04-01T09:00:00",
+    "endDateTime": "2026-04-01T11:00:00"
+  }
+}
+docs {
+  Attendu: 201 CONFIRMED, id=1
+  Puis verifier: GET /rooms/1 -> available=false
+}

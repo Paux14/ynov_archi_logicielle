@@ -1,0 +1,14 @@
+meta {
+  name: 03 - PATCH Re-cancel resa 3 -> ERREUR 422 (State Pattern)
+  type: http
+  seq: 3
+}
+patch {
+  url: {{reservation_url}}/reservations/3/cancel
+}
+docs {
+  Transition ILLEGALE: CANCELLED -> CANCELLED
+  Attendu: 422 Unprocessable Entity
+  "Transition illegale : CANCELLED -> CANCELLED"
+  PREUVE DU STATE PATTERN.
+}

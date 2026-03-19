@@ -1,0 +1,14 @@
+meta {
+  name: 08 - DELETE Carol -> Kafka member-deleted
+  type: http
+  seq: 8
+}
+delete {
+  url: {{member_url}}/members/3
+}
+docs {
+  Supprime Carol (ENTERPRISE, id=3).
+  Attendu: 204 No Content
+  AVEC Kafka: publie "member-deleted" -> reservation-service supprime toutes ses reservations
+  SANS Kafka: ses reservations resteraient (Carol n en a pas ici)
+}

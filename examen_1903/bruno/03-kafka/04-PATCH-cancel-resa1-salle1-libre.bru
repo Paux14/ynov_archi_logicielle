@@ -1,0 +1,14 @@
+meta {
+  name: 04 - PATCH Annuler resa 1 -> CANCELLED + salle 1 libre
+  type: http
+  seq: 4
+}
+patch {
+  url: {{reservation_url}}/reservations/1/cancel
+}
+docs {
+  Annule la reservation 1 d Alice.
+  Attendu: 200, status=CANCELLED
+  La salle 1 repasse available=true (synchrone, sans Kafka).
+  Verifier: GET /rooms/1 -> available=true
+}

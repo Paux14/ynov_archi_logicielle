@@ -1,0 +1,23 @@
+meta {
+  name: 01 - POST Bob salle 2 -> resa id=3 CONFIRMED
+  type: http
+  seq: 1
+}
+post {
+  url: {{reservation_url}}/reservations
+  body: json
+}
+headers {
+  Content-Type: application/json
+}
+body:json {
+  {
+    "roomId": 2,
+    "memberId": 2,
+    "startDateTime": "2026-06-01T09:00:00",
+    "endDateTime": "2026-06-01T11:00:00"
+  }
+}
+docs {
+  Attendu: 201 CONFIRMED, id=3
+}

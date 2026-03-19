@@ -1,0 +1,19 @@
+meta {
+  name: 04 - Membre Alice BASIC (max=2)
+  type: http
+  seq: 4
+}
+post {
+  url: {{member_url}}/members
+  body: json
+}
+headers {
+  Content-Type: application/json
+}
+body:json {
+  {
+    "fullName": "Alice Dupont",
+    "email": "alice@coworking.fr",
+    "subscriptionType": "BASIC"
+  }
+}

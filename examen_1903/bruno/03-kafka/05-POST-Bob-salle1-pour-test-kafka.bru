@@ -1,0 +1,25 @@
+meta {
+  name: 05 - POST Bob reserve salle 1 -> id=2 (pour test DELETE Kafka)
+  type: http
+  seq: 5
+}
+post {
+  url: {{reservation_url}}/reservations
+  body: json
+}
+headers {
+  Content-Type: application/json
+}
+body:json {
+  {
+    "roomId": 1,
+    "memberId": 2,
+    "startDateTime": "2026-04-10T14:00:00",
+    "endDateTime": "2026-04-10T16:00:00"
+  }
+}
+docs {
+  Bob reserve la salle 1 (disponible depuis l annulation).
+  Attendu: 201 CONFIRMED, id=2
+  On va supprimer la salle 1 ensuite pour tester Kafka.
+}

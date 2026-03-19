@@ -1,0 +1,19 @@
+meta {
+  name: 06 - Membre Carol ENTERPRISE (max=10)
+  type: http
+  seq: 6
+}
+post {
+  url: {{member_url}}/members
+  body: json
+}
+headers {
+  Content-Type: application/json
+}
+body:json {
+  {
+    "fullName": "Carol Enterprise",
+    "email": "carol@coworking.fr",
+    "subscriptionType": "ENTERPRISE"
+  }
+}

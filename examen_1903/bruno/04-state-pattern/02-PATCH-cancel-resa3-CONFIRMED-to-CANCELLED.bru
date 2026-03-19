@@ -1,0 +1,12 @@
+meta {
+  name: 02 - PATCH Cancel resa 3 -> CONFIRMED to CANCELLED
+  type: http
+  seq: 2
+}
+patch {
+  url: {{reservation_url}}/reservations/3/cancel
+}
+docs {
+  Transition legale: CONFIRMED -> CANCELLED
+  Attendu: 200 CANCELLED
+}

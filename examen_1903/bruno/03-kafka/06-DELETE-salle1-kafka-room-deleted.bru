@@ -1,0 +1,15 @@
+meta {
+  name: 06 - DELETE Salle 1 -> Kafka room-deleted
+  type: http
+  seq: 6
+}
+delete {
+  url: {{room_url}}/rooms/1
+}
+docs {
+  Supprime la salle 1.
+  Attendu: 204 No Content
+  AVEC Kafka: publie "room-deleted" -> resa 2 de Bob passe CANCELLED automatiquement
+  SANS Kafka: resa 2 reste CONFIRMED
+  Verifier avec la requete 07.
+}

@@ -17,3 +17,14 @@ spring:
   kafka:
     bootstrap-servers: localhost:9092
 
+services:
+  room-service:
+    url: http://localhost:8081
+  member-service:
+    url: http://localhost:8082
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html

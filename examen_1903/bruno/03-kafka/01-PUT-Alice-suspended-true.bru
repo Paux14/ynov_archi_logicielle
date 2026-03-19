@@ -1,0 +1,25 @@
+meta {
+  name: 01 - PUT Alice suspended=true (simule quota atteint)
+  type: http
+  seq: 1
+}
+put {
+  url: {{member_url}}/members/1
+  body: json
+}
+headers {
+  Content-Type: application/json
+}
+body:json {
+  {
+    "fullName": "Alice Dupont",
+    "email": "alice@coworking.fr",
+    "subscriptionType": "BASIC",
+    "suspended": true
+  }
+}
+docs {
+  Simule ce que Kafka ferait via "member-suspend" quand le quota BASIC (2) est atteint.
+  Avec Kafka actif: automatique. Sans Kafka: PUT manuel.
+  Attendu: 200, suspended=true
+}

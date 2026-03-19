@@ -141,7 +141,7 @@ Kafka doit gérer les mécanismes asynchrones suivants :
 
 Mettez en place un Design Pattern adapté dans le microservice Reservation.
 
-Vous êtes libre du choix (creational, behavioral ou structural). Justifiez votre choix dans un commentaire ou un fichier `DESIGN_PATTERN.md` à la racine du projet.
+Vous êtes libre du choix (creational, behavioral ou structural). Justifiez votre choix dans un commentaire ou un fichier `  .md` à la racine du projet.
 
 Quelques pistes de réflexion :
 

@@ -1,0 +1,24 @@
+meta {
+  name: 03 - PUT Alice suspended=false (desuspension)
+  type: http
+  seq: 3
+}
+put {
+  url: {{member_url}}/members/1
+  body: json
+}
+headers {
+  Content-Type: application/json
+}
+body:json {
+  {
+    "fullName": "Alice Dupont",
+    "email": "alice@coworking.fr",
+    "subscriptionType": "BASIC",
+    "suspended": false
+  }
+}
+docs {
+  Simule "member-unsuspend" Kafka (declenche lors d une annulation sous quota).
+  Attendu: 200, suspended=false
+}

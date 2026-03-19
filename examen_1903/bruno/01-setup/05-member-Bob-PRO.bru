@@ -1,0 +1,19 @@
+meta {
+  name: 05 - Membre Bob PRO (max=5)
+  type: http
+  seq: 5
+}
+post {
+  url: {{member_url}}/members
+  body: json
+}
+headers {
+  Content-Type: application/json
+}
+body:json {
+  {
+    "fullName": "Bob Martin",
+    "email": "bob@coworking.fr",
+    "subscriptionType": "PRO"
+  }
+}

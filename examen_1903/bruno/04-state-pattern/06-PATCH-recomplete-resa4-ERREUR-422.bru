@@ -1,0 +1,14 @@
+meta {
+  name: 06 - PATCH Re-complete resa 4 -> ERREUR 422 (State Pattern)
+  type: http
+  seq: 6
+}
+patch {
+  url: {{reservation_url}}/reservations/4/complete
+}
+docs {
+  Transition ILLEGALE: COMPLETED -> COMPLETED
+  Attendu: 422 Unprocessable Entity
+  "Transition illegale : COMPLETED -> COMPLETED"
+  PREUVE DU STATE PATTERN.
+}

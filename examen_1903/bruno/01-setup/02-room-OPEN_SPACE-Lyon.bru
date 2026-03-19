@@ -1,0 +1,22 @@
+meta {
+  name: 02 - Salle OPEN_SPACE Lyon
+  type: http
+  seq: 2
+}
+post {
+  url: {{room_url}}/rooms
+  body: json
+}
+headers {
+  Content-Type: application/json
+}
+body:json {
+  {
+    "name": "Open Space Lyon",
+    "city": "Lyon",
+    "capacity": 20,
+    "type": "OPEN_SPACE",
+    "hourlyRate": 15.00,
+    "available": true
+  }
+}

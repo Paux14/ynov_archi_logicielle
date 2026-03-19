@@ -1,0 +1,12 @@
+meta {
+  name: 07 - GET Reservations -> propagation suppression salle
+  type: http
+  seq: 7
+}
+get {
+  url: {{reservation_url}}/reservations
+}
+docs {
+  AVEC Kafka: resa id=2 (Bob) -> status=CANCELLED (propagation room-deleted)
+  SANS Kafka: resa id=2 (Bob) -> status=CONFIRMED
+}

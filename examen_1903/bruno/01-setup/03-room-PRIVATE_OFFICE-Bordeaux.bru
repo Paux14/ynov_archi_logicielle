@@ -1,0 +1,22 @@
+meta {
+  name: 03 - Salle PRIVATE_OFFICE Bordeaux
+  type: http
+  seq: 3
+}
+post {
+  url: {{room_url}}/rooms
+  body: json
+}
+headers {
+  Content-Type: application/json
+}
+body:json {
+  {
+    "name": "Bureau Prive Bordeaux",
+    "city": "Bordeaux",
+    "capacity": 4,
+    "type": "PRIVATE_OFFICE",
+    "hourlyRate": 50.00,
+    "available": true
+  }
+}

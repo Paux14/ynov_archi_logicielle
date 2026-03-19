@@ -1,0 +1,12 @@
+meta {
+  name: 02 - GET Salle 1 -> available=false (preuve)
+  type: http
+  seq: 2
+}
+get {
+  url: {{room_url}}/rooms/1
+}
+docs {
+  Attendu: available = false
+  Prouve que la reservation bloque bien la salle.
+}

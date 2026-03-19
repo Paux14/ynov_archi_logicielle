@@ -1,0 +1,22 @@
+meta {
+  name: 01 - Salle MEETING_ROOM Paris
+  type: http
+  seq: 1
+}
+post {
+  url: {{room_url}}/rooms
+  body: json
+}
+headers {
+  Content-Type: application/json
+}
+body:json {
+  {
+    "name": "Salle Einstein",
+    "city": "Paris",
+    "capacity": 10,
+    "type": "MEETING_ROOM",
+    "hourlyRate": 30.00,
+    "available": true
+  }
+}

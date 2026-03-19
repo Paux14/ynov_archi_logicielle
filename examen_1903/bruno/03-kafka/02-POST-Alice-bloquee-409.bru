@@ -1,0 +1,24 @@
+meta {
+  name: 02 - POST Alice suspendue bloquee -> ERREUR 409
+  type: http
+  seq: 2
+}
+post {
+  url: {{reservation_url}}/reservations
+  body: json
+}
+headers {
+  Content-Type: application/json
+}
+body:json {
+  {
+    "roomId": 2,
+    "memberId": 1,
+    "startDateTime": "2026-05-01T09:00:00",
+    "endDateTime": "2026-05-01T11:00:00"
+  }
+}
+docs {
+  Alice est suspendue, elle tente de reserver la salle 2 (libre).
+  Attendu: 409 - "Le membre 1 est suspendu et ne peut pas reserver"
+}
