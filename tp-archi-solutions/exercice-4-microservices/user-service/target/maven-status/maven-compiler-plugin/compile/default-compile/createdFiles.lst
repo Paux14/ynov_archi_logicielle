@@ -1,8 +1,8 @@
-com/ynov/userservice/service/UserService.class
-com/ynov/userservice/controller/UserController.class
-com/ynov/userservice/model/AppUser$Builder.class
-com/ynov/userservice/exception/ResourceNotFoundException.class
-com/ynov/userservice/model/AppUser.class
-com/ynov/userservice/UserServiceApplication.class
-com/ynov/userservice/exception/GlobalExceptionHandler.class
-com/ynov/userservice/repository/UserRepository.class
+com\ynov\userservice\UserServiceApplication.class
+com\ynov\userservice\service\UserService.class
+com\ynov\userservice\repository\UserRepository.class
+com\ynov\userservice\model\AppUser.class
+com\ynov\userservice\controller\UserController.class
+com\ynov\userservice\exception\GlobalExceptionHandler.class
+com\ynov\userservice\exception\ResourceNotFoundException.class
+com\ynov\userservice\model\AppUser$Builder.class

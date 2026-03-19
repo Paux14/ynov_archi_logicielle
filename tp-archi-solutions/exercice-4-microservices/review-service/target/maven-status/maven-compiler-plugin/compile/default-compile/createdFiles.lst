@@ -1,8 +1,8 @@
-com/ynov/reviewservice/model/Review.class
-com/ynov/reviewservice/model/Review$Builder.class
-com/ynov/reviewservice/exception/ResourceNotFoundException.class
-com/ynov/reviewservice/exception/GlobalExceptionHandler.class
-com/ynov/reviewservice/ReviewServiceApplication.class
-com/ynov/reviewservice/repository/ReviewRepository.class
-com/ynov/reviewservice/controller/ReviewController.class
-com/ynov/reviewservice/service/ReviewService.class
+com\ynov\reviewservice\exception\GlobalExceptionHandler.class
+com\ynov\reviewservice\service\ReviewService.class
+com\ynov\reviewservice\exception\ResourceNotFoundException.class
+com\ynov\reviewservice\controller\ReviewController.class
+com\ynov\reviewservice\repository\ReviewRepository.class
+com\ynov\reviewservice\ReviewServiceApplication.class
+com\ynov\reviewservice\model\Review.class
+com\ynov\reviewservice\model\Review$Builder.class
